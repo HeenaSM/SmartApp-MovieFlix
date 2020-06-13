@@ -50,11 +50,11 @@ class MovieCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.delegate = nil
+        self.imgPoster.image = UIImage(named: "photo")
     }
     
     @IBAction func actionDeleteMovie(_ sender: Any) {
         self.delegate?.deleteItem(cell: self)
     }
-    
 }
 

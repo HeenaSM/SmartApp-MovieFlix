@@ -43,7 +43,7 @@ class MovieDetailsViewController: UIViewController {
     func loadImage(){
         self.spinnerView = self.showSpinner(onView: self.view)
         DispatchQueue.main.async {
-            self.backPoster.af_setImage( withURL: URL(string: self.detailModel.posterImage)!, placeholderImage: UIImage(named: "no image"), filter: nil, imageTransition: .crossDissolve(0.2), completion : { response in
+            self.backPoster.af_setImage(withURL: URL(string: self.detailModel.posterImage)!, placeholderImage: UIImage(named: "photo"), filter: nil, imageTransition: .crossDissolve(0.2), completion : { response in
                  DispatchQueue.main.async {
                     self.removeSpinner(vSpinner: self.spinnerView)
                 }
