@@ -27,7 +27,7 @@ class PlayingMovieListViewController: UIViewController {
         searchBar.accessibilityTraits = UIAccessibilityTraits.searchField
         self.setUpRefreshControl()
     }
-
+    
     func setUpRefreshControl(){
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.tintColor = .red
